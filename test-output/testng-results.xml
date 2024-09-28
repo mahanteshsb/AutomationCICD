@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-28T19:35:17 IST" name="Suite" finished-at="2024-09-28T19:36:37 IST" duration-ms="79926">
+    <groups>
+      <group name="Purchage order">
+        <method signature="StandAloneTestCases.submitIrder(java.util.HashMap)[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" name="submitIrder" class="qa.testceses.StandAloneTestCases"/>
+      </group> <!-- Purchage order -->
+    </groups>
+    <test started-at="2024-09-28T19:35:17 IST" name="Error Validation" finished-at="2024-09-28T19:35:17 IST" duration-ms="43">
+    </test> <!-- Error Validation -->
+    <test started-at="2024-09-28T19:35:17 IST" name="End To End Test" finished-at="2024-09-28T19:36:37 IST" duration-ms="79926">
+      <class name="qa.testceses.StandAloneTestCases">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" started-at="2024-09-28T19:35:18 IST" name="launchApplication" finished-at="2024-09-28T19:35:53 IST" duration-ms="34714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitIrder(java.util.HashMap)[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" started-at="2024-09-28T19:35:53 IST" name="submitIrder" data-provider="getData" finished-at="2024-09-28T19:36:14 IST" duration-ms="20656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=@Power123, ProductName=ZARA COAT 3, email=mahanteshsb460@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitIrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" started-at="2024-09-28T19:36:14 IST" name="tearDown" finished-at="2024-09-28T19:36:14 IST" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" started-at="2024-09-28T19:36:14 IST" name="launchApplication" finished-at="2024-09-28T19:36:20 IST" duration-ms="5485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitIrder(java.util.HashMap)[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" started-at="2024-09-28T19:36:20 IST" name="submitIrder" data-provider="getData" finished-at="2024-09-28T19:36:37 IST" duration-ms="17038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=@Power123, ProductName=ADIDAS ORIGINAL, email=mahanteshsb461@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitIrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testceses.StandAloneTestCases@6c6cb480]" started-at="2024-09-28T19:36:37 IST" name="tearDown" finished-at="2024-09-28T19:36:37 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.testceses.StandAloneTestCases -->
+    </test> <!-- End To End Test -->
+  </suite> <!-- Suite -->
+</testng-results>

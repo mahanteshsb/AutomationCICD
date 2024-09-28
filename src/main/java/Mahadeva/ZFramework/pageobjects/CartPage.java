@@ -1,0 +1,39 @@
+package Mahadeva.ZFramework.pageobjects;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import qa.page.abstractcomponents.AbstractComponents;
+
+public class CartPage extends AbstractComponents {
+	WebDriver driver;
+	@FindBy(css=".cartSection h3")
+	List<WebElement> cartProducts;
+	
+	@FindBy(xpath="//button[text()=\"Checkout\"]")
+	WebElement checkoutEle;
+	
+	//button[text()=\"Checkout\"]
+	public CartPage(WebDriver driver) {
+		// initialization
+		super(driver);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public Boolean verifyProductDisplay(String productName) {
+		Boolean match = cartProducts.stream()
+				.anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+		return match;
+	}
+
+	public CheckOutPage checckOutPage() {
+		checkoutEle.click();
+		CheckOutPage checkout=new CheckOutPage(driver);
+		return checkout;
+	}
+}
