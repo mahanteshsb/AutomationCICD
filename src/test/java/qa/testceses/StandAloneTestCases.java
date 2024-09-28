@@ -31,7 +31,7 @@ public class StandAloneTestCases extends BaseTest{
 	public void submitIrder(HashMap<String , String> Input) throws IOException  {
 		String productName = "ZARA COAT 3";
 		
-		
+		//Changes is Done
 		ProductCateLogue catelogue=	landingPage.loginApplication(Input.get("email"), Input.get("password"));
 		
 		List<WebElement>products=catelogue.getProductList();
